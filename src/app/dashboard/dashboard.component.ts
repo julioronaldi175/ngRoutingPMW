@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Renderer2, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-dashboard',
@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DashboardComponent implements OnInit {
 
-  constructor() { }
+  constructor(private renderer:Renderer2) { }
 
   ngOnInit(): void {
   }
